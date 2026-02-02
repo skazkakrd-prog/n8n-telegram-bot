@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: n8n-telegram
+    env: docker
+    region: frankfurt # или oregon, если ближе к РФ
+    plan: free
+    envVars:
+      - key: N8N_HOST
+        value: 0.0.0.0
+      - key: GENERIC_TIMEZONE
+        value: Europe/Moscow
+      - key: N8N_SECURE_COOKIE
+        value: "false"

@@ -1,0 +1,6 @@
+FROM n8nio/n8n:latest
+
+# Можно добавить свои переменные, но не обязательно
+ENV N8N_HOST=0.0.0.0
+ENV GENERIC_TIMEZONE=Europe/Moscow
+ENV N8N_SECURE_COOKIE=false
